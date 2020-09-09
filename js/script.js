@@ -13,9 +13,13 @@ if (rainfall >= 20) {
   output = yeild;
 }
 var fertilizer = prompt("Did you use fertilizer?");
-
-var type = prompt("Did you use premium or regular fertilizer?");
+if (fertilizer === "yes") {
+  var type = prompt("Did you use premium or regular fertilizer?");
+} else {
+  console.log("The yeild should be " + output + " bushels per acre.");
+}
+//var type = prompt("Did you use premium or regular fertilizer?");
 //if ((type = premium)) {
 //console.log(yeild * 1.15);
 //}
-console.log("The yeild should be " + output + " bushels per acre.");
+//console.log("The yeild should be " + output + " bushels per acre.");
