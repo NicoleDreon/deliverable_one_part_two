@@ -22,3 +22,4 @@ if (fertilizer === "yes") {
   }
 } else {
   console.log("The yeild should be " + output + " bushels per acre.");
+}
