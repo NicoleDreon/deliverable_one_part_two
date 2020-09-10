@@ -16,9 +16,14 @@ var fertilizer = prompt("Did you use fertilizer?");
 if (fertilizer === "yes") {
   var type = prompt("Did you use premium or regular fertilizer?");
   if (type === "premium") {
-    console.log("The yeild should be " + output * 1.15 + " bushels per acre.");
+    output = output * 1.15;
+    console.log(
+      "The yeild should be " + output.toFixed(2) + " bushels per acre."
+    );
   } else if (type === "regular") {
-    console.log("The yeild should be " + output * 1.1 + " bushels per acre.");
+    console.log(
+      "The yeild should be " + (output * 1.1).toFixed(2) + " bushels per acre."
+    );
   }
 } else {
   console.log("The yeild should be " + output + " bushels per acre.");
